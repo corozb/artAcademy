@@ -1,0 +1,162 @@
+* {
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  height: 810px;
+  background: red;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-rows: 484px 389px 385px 536px 322px 322px 475px 509px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "l1 l2 l2 l3" 
+ "l4 l4 l5 l5"
+ "l6 l6 l7 l7"
+ "l8 l8 l8 l8"
+ "l9 l10 l13 l13"
+ "l11 l12 l13 l13"
+ "l14 l15 l15 l15"
+ "l16 l16 l17 l17";
+}
+
+.container__layout-1 {
+  grid-area: l1;
+  background: #001730;
+}
+
+.container__layout-2 {
+  grid-area: l2;
+  background: #4ad7d1;
+}
+
+.container__layout-3 {
+  grid-area: l3;
+  background: lightblue;
+}
+
+.container__layout-4 {
+  grid-area: l4;
+  background: #fe4a49;
+}
+
+.container__layout-5 {
+  grid-area: l5;
+  background: palegoldenrod;
+}
+
+.container__layout-6 {
+  grid-area: l6;
+  background: magenta;
+}
+
+.container__layout-7 {
+  grid-area: l7;
+  background: #4ad7d1;
+}
+
+.container__layout-8 {
+  grid-area: l8;
+  background: gold;
+}
+
+.container__layout-9 {
+  grid-area: l9;
+  background: teal;
+}
+
+.container__layout-10 {
+  grid-area: l10;
+  background: #4ad7d1;
+}
+
+.container__layout-11 {
+  grid-area: l11;
+  background: tomato;
+}
+
+.container__layout-12 {
+  grid-area: l12;
+  background: orangered;
+}
+
+.container__layout-13 {
+  grid-area: l13;
+  background: indigo;
+}
+
+.container__layout-14 {
+  grid-area: l14;
+  background: #001730;
+}
+
+.container__layout-15 {
+  grid-area: l15;
+  background: black;
+}
+
+.container__layout-16 {
+  grid-area: l16;
+  background: hotpink;
+}
+
+.container__layout-17 {
+  grid-area: l17;
+  background: darkcyan;
+}
+
+footer {
+  width: 100%;
+  height: 97px;
+  background: #333333;
+  padding: 16px;
+}
+
+footer p {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 459px 389px 385px 536px 322px 322px 644px 475px 509px;
+        grid-template-areas: "l1 l2 l2 l3"
+ "l4 l4 l5 l5"
+ "l6 l6 l7 l7" 
+ "l8 l8 l8 l8"
+ "l9 l9 l10 l10"
+ "l11 l11 l12 l12"
+ "l13 l13 l13 l13"
+ "l14 l15 l15 l15"
+ "l16 l16 l17 l17";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 210px 490px 459px 389px 389px 385px 385px 671px repeat(4, 322px) 644px 475px 475px 509px 509px;
+        grid-template-areas: "l1"
+ "l2"
+ "l3"
+ "l4"
+ "l5"
+ "l6"
+ "l7"
+ "l8"
+ "l9"
+ "l10"
+ "l11"
+ "l12"
+ "l13"
+ "l14"
+ "l15"
+ "l16"
+ "l17";
+  }
+}
+/*# sourceMappingURL=style.css.map */
