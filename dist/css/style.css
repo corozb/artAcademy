@@ -138,9 +138,9 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 210px 490px 459px 389px 389px 385px 385px 671px repeat(4, 322px) 644px 475px 475px 509px 509px;
-        grid-template-areas: "l1"
+    grid-template-columns: 1fr;
+    grid-template-rows: 210px 490px 459px 389px 389px 385px 385px 671px repeat(4, 322px) 644px 475px 475px 509px 509px;
+    grid-template-areas: "l1"
  "l2"
  "l3"
  "l4"
