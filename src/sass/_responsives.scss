@@ -21,17 +21,37 @@
         "l11 l11 l12 l12"
         "l13 l13 l13 l13"
         "l14 l15 l15 l15"
-        "l16 l16 l17 l17"
+        "l16 l16 l17 l17";
+
+    &__layout-1 {
+      padding-top: 10vh;
+
+      .box-text {
+
+        h1 {
+          font-size: 8rem;
+          padding: 9px;
+        }
+      }
+    } 
+    
+    &__layout-3 {
+      background-position: 50% 28%;
+    }
+  
+    &__layout-8 {
+      padding-top: 10vh;
+
+      .box-text {
+        h1 {
+          font-size: 8rem;
+          padding: 9px;
+        }
+      }
+  
+    }
   }
 
-  .container__layout-1 {
-    h1 {
-      font-size: 8rem;
-    }
-  } 
-  .container__layout-3 {
-    background-position: 50% 28%;
-  }
 }
 
 @include mobile {
@@ -78,6 +98,12 @@
       "l14"
       "l15"
       "l16"
-      "l17"
+      "l17";
+
+      &__layout-8 {
+        .box-text {
+          flex-direction: column;
+        }
+      }
   }
 }

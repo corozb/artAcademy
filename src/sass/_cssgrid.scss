@@ -57,7 +57,9 @@
 
   &__layout-8 {
     grid-area: l8;
-    background: gold;
+    background: url(../../dist/images/secondHero.png) 50% 50% no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   &__layout-9 {
@@ -85,7 +87,7 @@
 
   &__layout-13 {
     grid-area: l13;
-    background: url(../../dist/images/pexelsphoto1601729.jpeg) 50% 90% no-repeat;
+    background: url(../../dist/images/pexelsphoto1601729.jpeg) 50% 70% no-repeat;
     background-size: cover;
   }
 

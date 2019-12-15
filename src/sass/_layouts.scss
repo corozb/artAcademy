@@ -4,10 +4,7 @@
     align-items: center;
     
     h1 {
-      font-size: 10.5rem;
-      color: #fff;
-      font-family: $number-font;
-      font-weight: 700;
+      @include h1
     }
   }
 
@@ -39,20 +36,7 @@
       }
 
       a {
-        display: table;
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.875rem;
-        letter-spacing: 1px;
-        font-family: $par-font;
-        background-color: $bg-color;
-        padding: 10px 30px;
-        margin: 20px auto 45px 0;
-
-        &:hover {
-          background: darken($bg-color, $amount: 7);
-          cursor: pointer
-        }
+        @include button($bg-color)
       }
     }
   }
@@ -95,6 +79,7 @@
         padding-top: 30px;
       }
     }
+
   }
 
   .container__layout-5,
@@ -122,6 +107,43 @@
       i {
         color: $bg-color
       }
+    }
+  }
+
+  &__layout-8 {
+    padding: 0 10vw;
+    padding-top: 24vh;
+    
+    .box-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      h1 {
+        padding: 62px;
+        @include h1;
+      }
+      
+      a {
+        @include button($button-color)
+      }
+    }
+  }
+
+  &__layout-10 {
+    @include flex;
+    align-items: center;
+    
+    h2 {
+      @include h2;
+      font-size: 3rem;
+      color: #fff;
+      padding-bottom: 1.5rem;
+    }
+
+    a {
+      @include button($bg-color);
+      margin: 0;
     }
   }
 
