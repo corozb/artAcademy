@@ -1,5 +1,6 @@
 .hero {
   height: 810px;
+  background-attachment: fixed;
 }
 
 .container {
@@ -39,12 +40,14 @@
 
   &__layout-5 {
     grid-area: l5;
-    background: palegoldenrod;
+    background: url(../../dist/images/pexelsphoto1055845.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
 
   &__layout-6 {
     grid-area: l6;
-    background: magenta;
+    background: url(../../dist/images/pexelsphoto1680208.jpeg) 50% 50% no-repeat;
+    background-size: cover;
   }
 
   &__layout-7 {

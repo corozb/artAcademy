@@ -16,6 +16,24 @@
   }
 };
 
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin h2 {
+  font-family: $second-font;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+@mixin p {
+  line-height: 1.6;
+  font-family: $par-font;
+}
+
 @mixin hover-text {
   color: $second-color;
   text-shadow: 0 0 10px $second-color, 

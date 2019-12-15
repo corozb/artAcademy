@@ -1,0 +1,128 @@
+.container {
+  &__layout-1 {
+    @include flex;
+    align-items: center;
+    
+    h1 {
+      font-size: 10.5rem;
+      color: #fff;
+      font-family: $number-font;
+      font-weight: 700;
+    }
+  }
+
+  &__layout-2 {
+    @include flex;
+    
+    &-text {
+      color: #fff;
+      padding: 0 1.2rem;
+      
+      h3 {
+        font-family: $second-font;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        margin-top: 33px;
+      }
+
+      h2 {
+        font-size: 3rem;
+        margin-top: 20px;
+        @include h2;
+      }
+
+      p {
+        margin-top: 20px;
+        @include p;
+      }
+
+      a {
+        display: table;
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        font-family: $par-font;
+        background-color: $bg-color;
+        padding: 10px 30px;
+        margin: 20px auto 45px 0;
+
+        &:hover {
+          background: darken($bg-color, $amount: 7);
+          cursor: pointer
+        }
+      }
+    }
+  }
+
+  &__layout-4, 
+  &__layout-5, 
+  &__layout-6, 
+  &__layout-7 {
+    @include flex;
+
+    &-text {
+      color: #fff;
+      padding: 0 60px 0 101px;
+
+      h3 {
+        font-family: $second-font;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        margin-top: 33px;
+      }
+
+      h2 {
+        margin-left: -101px;
+        padding: 15px 20px 15px 101px;
+        background: $second-color;
+        font-size: 3rem;
+        margin-top: 10px;
+        @include h2;
+      }
+
+      p {
+        margin-top: 10px;
+        @include p;
+      }
+
+      i {
+        font-size: 2rem;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  .container__layout-5,
+  .container__layout-6 {
+    &-text {
+      h2 {
+        background-color: #fff;
+        color: #000;
+      }
+
+      i {
+        color: $bg-color
+      }
+    }
+  }
+
+  .container__layout-7 {
+    &-text {
+      color: #000;
+
+      h2 {
+        background-color: $bg-color;
+      }
+
+      i {
+        color: $bg-color
+      }
+    }
+  }
+
+}
