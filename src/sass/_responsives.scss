@@ -1,4 +1,14 @@
 @include tablet {
+  .hero {
+    &__container {
+      width: 70vw;
+    }
+
+    &-box {
+      width: 455px;
+    }
+  }
+
   .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 459px 389px 385px 536px 322px 322px 644px 475px 509px;
@@ -13,9 +23,37 @@
         "l14 l15 l15 l15"
         "l16 l16 l17 l17"
   }
+
+  .container__layout-3 {
+    background-position: 50% 28%;
+  }
 }
 
 @include mobile {
+  .hero {
+    &__container {
+      width: 65vw;
+    }
+
+    &-box {
+      width: 340px;
+
+      &-text {
+        padding: 0;
+
+        h1 {
+          font-size: 3.75rem;
+        }
+  
+        p {
+          margin: 20px 14px 40px 0;
+          margin-right: 14px;
+        }
+      }
+
+    }
+  }
+
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 210px 490px 459px 389px 389px 385px 385px 671px repeat(4, 322px) 644px 475px 475px 509px 509px;

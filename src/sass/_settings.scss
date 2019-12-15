@@ -21,6 +21,12 @@
   text-shadow: 0 0 10px $second-color, 
 };
 
+@mixin titles {
+  font-family: $font-letters;
+  font-size: 30px;
+  color: #fff;
+}
+
 @mixin mobile {
   @media screen and (max-width: 768px) {
     @content;
