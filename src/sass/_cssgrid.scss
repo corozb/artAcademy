@@ -98,12 +98,14 @@
 
   &__layout-15 {
     grid-area: l15;
-    background: black;
+    background: url(../../dist/images/pexelsphoto1829743.jpeg) 50% 70% no-repeat;
+    background-size: cover;
   }
 
   &__layout-16 {
     grid-area: l16;
-    background: hotpink;
+    background: url(../../dist/images/heroimage.png) 50% 70% no-repeat;
+    background-size: cover;
   }
 
   &__layout-17 {

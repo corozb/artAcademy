@@ -1,10 +1,16 @@
 footer {
-  width: 100%;
   height: 97px;
-  background: #333333;
-  padding: 16px;
-
+  background: $footer-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  span {
+    color: $second-color;
+  }
+  
   p {
+    font-family: $number-font;
     color: #fff
   }
 }
